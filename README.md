@@ -1,65 +1,78 @@
+# Uni-Kart
+
 Uni-Kart is a platform designed to facilitate students in buying, selling, and exchanging second-hand goods. This initiative aims to promote sustainability and affordability within student communities by providing an easy-to-use interface for trading pre-owned items.
 
-Features
+## Features
 
-User Authentication: Secure login and registration system for students.
+- **User Authentication**: Secure login and registration system for students.
+- **Product Listings**: Users can create, view, and manage listings of items they wish to sell or exchange.
+- **Search and Filter**: Efficient search functionality with filters to help users find specific items quickly.
+- **Messaging System**: Integrated chat feature allowing users to communicate directly for inquiries and negotiations.
+- **Responsive Design**: Optimized for various devices, ensuring a seamless experience on desktops, tablets, and smartphones.
 
-Product Listings: Users can create, view, and manage listings of items they wish to sell or exchange.
+## Technologies Used
 
-Search and Filter: Efficient search functionality with filters to help users find specific items quickly.
+- **Frontend**: React.js
+- **Backend**: Node.js with Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Styling**: CSS and Bootstrap
 
-Messaging System: Integrated chat feature allowing users to communicate directly for inquiries and negotiations.
-
-Responsive Design: Optimized for various devices, ensuring a seamless experience on desktops, tablets, and smartphones.
-
-Technologies Used
-
-Frontend: React.js
-
-Backend: Node.js with Express.js
-
-Database: MongoDB
-
-Authentication: JSON Web Tokens (JWT)
-
-Styling: CSS and Bootstrap
-
-Getting Started
+## Getting Started
 
 To run this project locally, follow these steps:
 
-Clone the repository:
+1. **Clone the repository**:
 
-git clone https://github.com/priyankaghimire1/Uni-Kart.git
-cd Uni-Kart
+   ```bash
+   git clone https://github.com/priyankaghimire1/Uni-Kart.git
+   cd Uni-Kart
+   ```
 
-Install dependencies:
+2. **Install dependencies**:
 
-For the backend:
+   For the backend:
 
-cd backend
-npm install
+   ```bash
+   cd backend
+   npm install
+   ```
 
-For the frontend:
+   For the frontend:
 
-cd ../frontend
-npm install
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 
-Set up environment variables:
+3. **Set up environment variables**:
 
-Create a .env file in the backend directory with the following content:
+   Create a `.env` file in the `backend` directory with the following content:
 
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+   ```env
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   ```
 
-Run the application:
+4. **Run the application**:
 
-In the backend directory, start the server:
+   In the `backend` directory, start the server:
 
-npm start
+   ```bash
+   npm start
+   ```
 
-In the frontend directory, start the React application:
+   In the `frontend` directory, start the React application:
+
+   ```bash
+   npm start
+   ```
+
+   The backend server will run on `http://localhost:5000`, and the frontend will run on `http://localhost:3000`.
+
+
+
 
 npm start
 
