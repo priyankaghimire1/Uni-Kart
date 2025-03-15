@@ -74,8 +74,3 @@ To run this project locally, follow these steps:
 
 
 
-npm start
-
-The backend server will run on http://localhost:5000, and the frontend will run on http://localhost:3000.
-npm start
-The backend server will run on http://localhost:5000, and the frontend will run on http://localhost:3000.
