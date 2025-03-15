@@ -1,0 +1,316 @@
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    min-height: 80vh;
+    margin-top: 10px;
+    margin-left: 29%;
+    margin-right: 25%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    /* border:2px solid #3a1004; */
+    border-radius: 8px;
+    margin-bottom: 300px;
+    width: 600px;
+    height: auto;
+    box-shadow: 10px 10px 8px #fff4f2;
+    background-color: #fffffe;
+}
+
+.heading1{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    padding-left: -20px;
+    text-align: center;
+    color: #3a5635;
+}
+
+.subheading1{
+    padding-left: 10px;
+    text-align: left;
+    font-size:20px ;
+    color: #3a5635;
+}
+
+.line2{
+    margin-top:-5px;
+    border-top: 5px solid #efebe2; /* Cream color */
+    width: 100% !important;
+    max-width: 1000px;
+}
+
+.message{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: red;
+    font-size: large;
+    font-weight: 600;
+}
+
+.signuplabel{
+    padding-left: -100px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 20px;
+    font-size: medium;
+}
+.signupinputphone{
+    width: 600px !important;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px !important;
+    font-size: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.signupinput{
+    max-width: unset;
+     width: 600px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px !important;
+    font-size: 15px; 
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.signupinput{
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.password-container{
+    position: relative;
+}
+
+.password-toggle-icon1{
+    position: absolute;
+    right: 25px; /* Position the icon to the right */
+    top: 70%;
+    transform: translateY(-50%); 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Size of the icon */
+    /* z-index: 1; */
+}
+
+.signupbutton{
+    width: 20% !important;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    margin-top: 30px;
+    color: black;
+    cursor: pointer;
+    height: 2.2em;
+    border-radius: 30px;
+    font-size: 14px;
+    margin: 20px 0px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #fff4f2 !important;
+    box-shadow: 6px 6px 12px #c5c5c5;
+}
+
+.signupbutton::before{
+    content: '';
+     width: 0;
+     height: 3em;
+     border-radius: 30em;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-image: linear-gradient(to right, #FFAEC9 0%, #ffffff 100%);
+     transition: .5s ease;
+     display: block;
+     z-index: -1;
+    }
+    
+ 
+ .signupbutton:hover::before{
+     /* background-color: #e07700; */
+     width: 9em;
+ }
+
+.signupparagraph{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 10px 160px;
+}
+
+.signupparagraph a{
+    font-size: 16px;
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signupparagraph a:hover{
+    text-decoration: underline;
+    color: #FFAEC9;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.image-section img {
+    max-width: 300px;
+    /* Ensures responsive scaling */
+    height: auto;
+}
+
+.signup-popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    border:2px solid #3a1004;
+    visibility: hidden;
+    /* transition: transform 0.4s,top 0.4s; */
+}
+
+.signuppopup{
+    visibility: visible;
+    top: 50%;
+    z-index: 1000;
+}
+
+.signup-popup img{
+    margin-top: -50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, alpha);
+}
+
+.signu-popup h2{
+    font-size: 38px;
+}
+
+.button2{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #3a5635;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, alpha);
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .App {
+        padding: 10px;
+    }
+
+    .form {
+        padding: 20px;
+        margin: 0 20%;
+        /* Adjusts the form margin for smaller screens */
+    }
+
+    .image-section img {
+        max-width: 250px;
+        /* Adjusts image width for smaller screens */
+    }
+
+    .form .heading1 {
+        font-size: 20px;
+        /* Makes heading smaller on mobile */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+        /* Adjusts input font size for smaller screens */
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        /* Adjusts submit button font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        margin: 0 10%;
+        /* Further reduces margin on very small screens */
+    }
+
+    .image-section img {
+        max-width: 200px;
+        /* Adjusts image width for smaller screens */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 8px;
+        /* Reduces padding on smaller screens */
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+        /* Reduces padding on smaller screens */
+    }
+
+    .paragraph {
+        font-size: 14px;
+        /* Reduces text size for smaller screens */
+    }
+}
+.preset-images {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.preset-image {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.preset-image:hover {
+    transform: scale(1.1); 
+}
+
+.selected {
+    border: 2px solid #3a5635; 
+}

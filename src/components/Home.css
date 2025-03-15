@@ -1,0 +1,103 @@
+.headingaboveproducts{
+  text-align: center;
+  margin-top: 3%;
+  /* margin-bottom: 50px; */
+  color: black;
+}
+
+.icons{
+  font-size: 32px;
+  height: 32px;
+  width: 32px;
+
+}
+.icons:hover{
+  fill: aqua;
+  font-weight: bolder;
+}
+.icon-con{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: white;
+  cursor: pointer;
+  margin: 7px;
+}
+/* .links{
+  text-decoration: none;
+  font-size: 24px;
+  color: #002f34;
+  font-weight: bold;
+} */
+#skills{
+  margin-top: -20%;
+  padding: 2%;
+  /* height: 80vh; */
+  min-height: 500px;
+  font-family: sans-serif;
+  display: flex;}
+  
+.box{
+  margin-top: -5%;
+  box-shadow: 0px 7px 7px var(--medium);
+  background-color: var(--lightest);
+  border-radius: 10%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.max{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-left: 5%;
+  /* margin-top:20%; */
+}
+.text-home{
+  text-align: left;
+  color:#262525;
+  padding: 10px;
+  font-size: medium;
+  margin-top: 30px;
+}
+.content-home{
+  font-size: 48px;
+  padding: 60px;
+  line-height: 1.2;
+}
+
+.max1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-left: 0%;
+  margin-top: 0%;
+}
+
+.start-browsing{
+  height: 10%;
+  border-radius: 8px;
+  background-color: #d17609;
+  border-color: #d17609;
+}
+
+.start-browsing:hover{
+  cursor: pointer;
+}
+
+#skills1{
+  text-align: center;
+}
+
+.teammates{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5%;
+}

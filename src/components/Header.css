@@ -1,0 +1,100 @@
+.header{
+  background-color: transparent;
+    height: 40px;
+    /* border:2px solid #d17609; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center items */
+    padding: 15px 30px;
+    margin-top: -1px;
+    /* margin-left: -10px;
+    margin-right: -10px; */
+    /* background-color: #f9f9f9;  */
+    /* border-bottom: 1px solid #3a5635;  */
+}
+
+.final_logo_processed{
+  padding: 20px;
+    display:inline-block;
+}
+
+.header button{
+  height: 40px;
+  width: 140px;
+  background-color: #d17609;
+  color: black;
+  font-weight: 400;
+  font-size: medium;
+  padding: 0px 20px;
+  border-radius: 50px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-style: normal;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-color:2px solid black;
+}  
+
+.header button:hover{
+  /* background-color: #f4c5cc;  */
+  border: 2px solid #000;
+  transform: translateY(-7px);
+  box-shadow: 0px 3px 2px black;
+}
+
+.header button:active {
+  transform: translateY(-1px);
+  
+  transform: scale(0.95);
+}
+
+.nav-link {
+  padding: 0.8em 2em;
+  font-size: medium;
+  color: #000;
+  background-color: transparent; 
+  border: none; 
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link:hover{ 
+  background-color: transparent; 
+  font-size: large;
+  color: #3a5635;
+  transform: translateY(-7px);
+}
+
+/* .nav-link:active {
+  transform: translateY(-1px);
+} */
+
+.cart-icon{
+  padding-left: 100px;
+  padding-bottom: 8px;
+}
+.cart-icon:hover{
+  /* border: 2px solid #000; */
+  transform: translateY(-7px);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  /* box-shadow: 0px 3px 2px black; */
+}
+
+.cart-icon:active {
+  transform: translateY(-1px);
+  transform: scale(0.95);
+}
+
+.links {
+  display: flex; /* Ensures links are aligned horizontally */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* gap: 5%; */
+  /* padding: 0 30px; */
+}

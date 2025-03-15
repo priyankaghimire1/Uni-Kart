@@ -1,0 +1,334 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+    margin-left: -22%;
+    background-color: f5f5f1;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.image-section1{
+    margin-left: 17.5%;
+    grid-row: auto;
+    margin-bottom: 10px;
+}
+
+.image-section1 img {
+    max-width: 300px;
+    height: auto;
+}
+
+.form {
+    background-color: white;
+    border: 2px solid #3a1004;
+    border-radius: 8px;
+    /* box-shadow: 10px 10px 2px #fff4f2; */
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0% ;
+    margin-left: 18%;
+    max-width: 850px;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.image{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0%;
+}
+
+.form1{
+    background-color: white;
+    padding-left: 20px;
+}
+
+.form .heading1 {
+ margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3a5635;
+    text-align: left;
+}
+.form .subheading{
+    font-size: 16px;
+    color: black;
+    font-weight: 100;
+}
+
+.form input[type="password"]{
+    width: 100%;
+    padding-left: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 14px;
+    box-sizing: border-box;
+    /* Ensures padding doesn’t overflow */
+    overflow: hidden;
+    /* Prevents text overflow */
+    white-space: nowrap;
+    /* Prevents text wrapping */
+    text-overflow: ellipsis;
+    /* Adds ellipsis if input text is too long */
+}
+
+.form input[type="text"]{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.input-field{
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.password-container{
+    position: relative;
+}
+
+.password-toggle-icon{
+    position: absolute;
+    right: 15px; /* Position the icon to the right */
+    top: 50%;
+    transform: translateY(-50%); 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Size of the icon */
+    /* z-index: 1; */
+}
+
+.login-button {
+     width: 30%;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    /* background-color: #ff8c00; */
+    margin-top: 30px;
+    color: black;
+    cursor: pointer;
+    height: 2.2em;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #fff4f2;
+    box-shadow: 6px 6px 12px #c5c5c5;
+}
+
+.login-button::before{
+   content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #FFAEC9 0%, #ffffff 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+
+.login-button::before:hover{
+    /* background-color: #e07700; */
+    width: 9em;
+}
+
+.paragraph {
+    text-align: center;
+    margin-top: 30px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.paragraph a {
+    font-size: 16px;
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.paragraph a:hover {
+    text-decoration: underline;
+    color: #FFAEC9;
+}
+
+@media screen and (max-width: 768px) {
+    .App {
+        padding: 10px;
+    }
+
+    .form {
+        padding: 20px;
+        margin: 0 20%;
+        /* Adjusts the form margin for smaller screens */
+    }
+
+    .image-section img {
+        max-width: 250px;
+        /* Adjusts image width for smaller screens */
+    }
+
+    .form .heading1 {
+        font-size: 20px;
+        /* Makes heading smaller on mobile */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+        /* Adjusts input font size for smaller screens */
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        /* Adjusts submit button font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        margin: 0 10%;
+        /* Further reduces margin on very small screens */
+    }
+
+    .image-section img {
+        max-width: 200px;
+        /* Adjusts image width for smaller screens */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 8px;
+        /* Reduces padding on smaller screens */
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+        /* Reduces padding on smaller screens */
+    }
+
+    .paragraph {
+        font-size: 14px;
+        /* Reduces text size for smaller screens */
+    }
+}
+
+.loginpopup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    border:2px solid #3a1004;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+
+.open-loginpopup{
+    visibility: visible;
+    top: 50%;
+    z-index: 1000;
+}
+
+.loginpopup img{
+    margin-top: -50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, alpha);
+}
+
+.loginpopup h2{
+    font-size: 38px;
+}
+
+.loginpopup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #3a5635;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, alpha);
+}
+
+.loginfail{
+    width: 400px;
+    background: #FFf;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    border:2px solid #3a1004;
+    /* transition: transform 0.4s,top 0.4s; */
+    z-index: 3;
+}
+
+.open-loginfail{
+    visibility: visible;
+    top: 50%;
+}
+.loginfail button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #3a5635;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, alpha);
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,  0.5);
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+}
+
+.showoverlay{
+    opacity: 0.05;
+    z-index: 20;
+}

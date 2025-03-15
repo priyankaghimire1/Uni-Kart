@@ -1,0 +1,319 @@
+.card2{
+  /* display: flex;
+  margin-left: 77px;
+  padding-left: 50px;
+  margin-right: 0px;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 60px;
+  overflow-x: hidden !important;
+  white-space: nowrap; */
+  /* width: max-content; */
+  /* background-color: #d17609; */
+  display: flex;
+    margin-left: 3%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    overflow-y: hidden;
+    overflow-x: hidden !important;
+    white-space: nowrap;
+}
+
+.display2{
+  /* position: relative;
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+  border: 2px solid  #d17609;
+  border-radius: 8px;
+  width: 250px; 
+  height: 380px;
+  padding-right: 0px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #3a5635; */
+  /* margin-bottom: -20px; */
+  display: flex;
+    gap: 1px;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid  grey;
+    border-radius: 8px;
+    width: 15%;/* Match the image width */
+    height: 15%;
+    padding-right: 0px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image2 {
+  /* width: 100% !important; 
+  height: 300px !important;
+  display: block; 
+  border-radius: 8px; 
+  object-fit: cover !important;
+  margin-right: 10px; */
+  width: 100% !important; /* Ensure image fills the container */
+    height: 200px !important; /* Maintain aspect ratio */
+    display: block; /* Remove unwanted gaps */
+    border-radius: 8px; /* Optional styling */
+    object-fit: cover !important;
+}
+
+.icons2{
+  /* position: absolute !important;
+  
+  color: red;
+  font-size: 24px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 50%; */
+  position: absolute !important;
+  top: 3%;
+  right: 5%;
+    color: gray;
+    font-size: 24px;
+    cursor: pointer;
+    /* background: rgba(255, 255, 255, 0.7); */
+    margin-left: 0%;
+    padding: 0%;
+    border-radius: 50%;
+}
+
+.icons2:hover{
+  color: rgb(247, 50, 155);
+}
+
+.product-name2{
+  margin-top: 10%;
+  color: black;
+  /* font-size: 17px; */
+  text-align: left;
+  margin-bottom: -10px;
+}
+
+.product-name2:hover{
+  color: #3a5635;
+  cursor: pointer;
+}
+
+.product-price2{
+  font-size: medium;
+  margin-bottom: 10%;
+}
+
+.title{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    gap: 0%;
+    /* padding: 60px 450px;    */
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  font-weight: 400;
+    color: black;
+    display: flex;
+    /* font-size: 24px; */
+    font-weight:400;
+    
+}
+
+.top{
+  padding-top: 2%;
+  padding-left: -10%;
+  height: 50px;
+  width: 1000px;
+  margin: 30px;
+}
+
+.title-img{
+  width: 20%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  padding-top: -10px;
+}
+.search {
+    position: relative;
+  }
+  
+  .search{
+    width: 1300px;
+    height: 30px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding: 0px 0px 10px 20px;
+    border-radius: 9999px;
+    border: solid 1px #3a5635;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .search input{
+    font-size: medium;
+    width: 950px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0px 0px 10px 20px;
+    border-color:transparent;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: -1;
+  }
+
+  .search input:focus{
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+   .searchbutton{
+    background-color: inherit;
+    color: black;
+    position: absolute;
+    top:5px;
+    right: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30em;
+    border:2px solid black;
+    background-color: #d17609;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    font-size: 1rem;
+    transform: translateY(-0.10em);
+    transition: 0.2s;
+    cursor: pointer;
+    z-index: 1;
+   }
+
+  .searchbutton:hover{
+    background-color: #efaf00;
+    color: black;
+    font-weight: 500;
+  } 
+
+  .searchbutton:active {
+    box-shadow: none;
+    transform: translateY(0);
+    transform: scale(0.95);
+  }
+  
+  .search img{
+    position: relative;
+    top: 5px;
+    background-color: transparent; 
+  }
+
+  .main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 150px;
+    /* padding-right: 10px; */
+    border-radius: 30px;
+    background-color: #aec289;
+    color: black;
+    gap: 200px;
+  }
+
+
+  .filter{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+    padding-left:100px;
+    padding-top: 0px;
+  }
+
+  .insidefilter{
+    color: #3a5635;
+  }
+
+  .swapbutton{
+    margin-bottom: 10px;
+    margin-left: 55%;
+    padding-right: 0%;
+    color: black;
+}
+
+.hello{
+  color: black;
+    top:5px;
+    right: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30em;
+    border:2px solid black;
+    background-color: #d17609;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    /* font-size: 1rem; */
+    transform: translateY(-0.10em);
+    transition: 0.2s;
+    cursor: pointer;
+    margin-left:0%;
+}
+
+.hello:hover{
+  background-color: #efaf00;
+    color: black;
+    font-weight: 500;
+}
+
+.hello:active {
+  box-shadow: none;
+  transform: translateY(0);
+  transform: scale(0.95);
+}
+
+  .line1 {
+    margin-left: -10px;
+    margin-top:10px;
+    border-top: 5px solid #efebe2; /* Cream color */
+    width: 100%;
+    max-width: 1000px;
+  }
+
+.pagination{
+  padding: 5px;
+  margin: 15px 0;
+  gap: 0.5%;
+  display: flex;
+  justify-content: center;
+}
+.pagination > span{
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.pagination__disable{
+  opacity: 0;
+}
+
+.pagination__selected{
+  font-style: bold;
+  background-color: #f4c5cc;
+}
